@@ -140,6 +140,19 @@ reports/
 - Designed for future extensions like Federated Learning and secure model rollout
 
 ---
+## 📸 Dashboard Preview
+
+### Traffic Input & Analysis
+![Traffic Input](docs/images/dashboard-input.png)
+
+### Prediction & System Health
+![Prediction Panel](docs/images/prediction-panel.png)
+
+### SHAP Explainability
+![SHAP Explainability](docs/images/shap-explainability.png)
+
+
+---
 
 ## 👤 Author
 
