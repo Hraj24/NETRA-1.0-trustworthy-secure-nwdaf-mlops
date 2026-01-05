@@ -168,6 +168,9 @@ from src.shap_logger import ShapLogger
 
 from fastapi.middleware.cors import CORSMiddleware
 
+
+
+
 # =========================================================
 # App
 # =========================================================
@@ -182,7 +185,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "https://netra-1-0-trustworthy-sec-nwdaf.vercel.app",
+        "https://netra-1-0-trustworthy-secure-nwdaf.vercel.app",
+        "http://localhost:5173"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -403,5 +410,6 @@ def health():
         "rollback_active": model_manager.rollback_active,
         "recovery_counter": model_manager.recovery_counter,
     }
+
 
 
