@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000";
+const API = "http://netra-1-0-trustworthy-secure-nwdaf-mlops.onrender.com/";
 
 export const predict = (data) =>
   axios.post(`${API}/predict`, data);
