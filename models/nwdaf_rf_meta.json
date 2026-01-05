@@ -1,0 +1,18 @@
+{
+  "model_name": "nwdaf_rf_traffic_predictor",
+  "version": "1.0.0",
+  "input_schema": [
+    "time_of_day",
+    "slice_type",
+    "jitter",
+    "packet_loss",
+    "throughput"
+  ],
+  "output": "future_load",
+  "validity": "synthetic_traffic_v1",
+  "slice_constraints": [
+    "embb",
+    "urllc",
+    "mmtc"
+  ]
+}

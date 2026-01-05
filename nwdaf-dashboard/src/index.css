@@ -1,0 +1,226 @@
+/* ---------- Global Theme ---------- */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f1117;
+  color: #e6e6eb;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+/* ---------- Grid ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: #161a23;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  border-bottom: 1px solid #2a2f3a;
+  padding-bottom: 8px;
+}
+
+/* ---------- Form ---------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  color: #9aa0aa;
+  margin-bottom: 4px;
+}
+
+input, select {
+  background: #0f1117;
+  border: 1px solid #2f3545;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #fff;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #6c7cff;
+}
+
+/* ---------- Button ---------- */
+button {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #6c7cff, #8b5cf6);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Prediction ---------- */
+.metric {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.muted {
+  color: #a0a5b1;
+  font-size: 14px;
+}
+
+/* ---------- Warning ---------- */
+.warning {
+  margin-top: 8px;
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+/* ---------- Confidence Indicator ---------- */
+.confidence {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.confidence.high {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.confidence.medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+.confidence.low {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+
+
+/* ---------- Drift Badge ---------- */
+.badge {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.badge.ok {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.badge.alert {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+
+/* ---------- Confidence Explanation ---------- */
+.confidence-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #c7cbd6;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* ---------- Rule-Based Explanation ---------- */
+.rule-text {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d5db;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid #6c7cff;
+  border-radius: 6px;
+}
+
+
+/* ---------- Explanation Box ---------- */
+.explanation-box {
+  margin-top: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid #6c7cff;
+  border-radius: 10px;
+}
+
+.explanation-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #e5e7eb;
+}
+
+.explanation-section {
+  margin-top: 10px;
+}
+
+.explanation-section h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #a5b4fc;
+}
+
+.explanation-section p,
+.explanation-section li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d5db;
+}
+
+.explanation-section ul {
+  margin: 4px 0 0 18px;
+}
+
+
